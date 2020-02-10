@@ -27,6 +27,7 @@ def find_greater_pair(src)
       greater_nums.push(src[row][0])
     else greater_nums.push(src[row][1])
     row =+ 1 
+    end
   end
   greater_nums 
 end
