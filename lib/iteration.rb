@@ -40,4 +40,8 @@ end
   # the number was even. Review the operator documentation if you've forgotten
   # this!
 def total_even_pairs(src)
+  row = 0 
+  even_pairs = []
+  while row < src.length do 
+    if src[row][0] ==
 end
