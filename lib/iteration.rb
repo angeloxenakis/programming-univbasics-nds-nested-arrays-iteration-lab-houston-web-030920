@@ -16,13 +16,21 @@ def join_ingredients(src)
   pizza_strings
 end
 
-def find_greater_pair(src)
   # src will be an array of [ [number1, number2], ... [numberN, numberM] ]
   # Produce a new Array that contains the larger number of each of the pairs
   # that are in the inner Arrays
+def find_greater_pair(src)
+    row = 0 
+  greater_nums = []
+  while row > src.length do 
+    if src[row][0] > src[row][1]
+      greater_nums.push(src[row][0])
+    else greater_nums.push(src[row][1])
+    row =+ 1 
+  end
+  greater_nums 
 end
 
-def total_even_pairs(src)
   # src will be an array of [ [number1, number2], ... [numberN, numberM] ]
   # if both numbers in the pair are even, then add both those numbers to the
   # total
@@ -30,4 +38,5 @@ def total_even_pairs(src)
   # As a reminder any number % 2 will return 0 or 1. If the result is 0, then
   # the number was even. Review the operator documentation if you've forgotten
   # this!
+def total_even_pairs(src)
 end
