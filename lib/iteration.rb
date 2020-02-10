@@ -24,12 +24,12 @@ def find_greater_pair(src)
   greater_nums = []
   while row > src.length do 
     if src[row][0] > src[row][1]
-      greater_nums << (src[row][0])
-    else greater_nums << (src[row][1])
+      greater_nums.push(src[row][0])
+    else greater_nums.push(src[row][1])
     end
   row += 1 
   end
-  greater_nums 
+  return greater_nums 
 end
 
   # src will be an array of [ [number1, number2], ... [numberN, numberM] ]
