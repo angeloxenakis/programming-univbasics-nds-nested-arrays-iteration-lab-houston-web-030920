@@ -43,5 +43,6 @@ def total_even_pairs(src)
   row = 0 
   even_pairs = []
   while row < src.length do 
-    if src[row][0] ==
+    if src[row][0] == src[row][1]
+      
 end
