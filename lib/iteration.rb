@@ -23,11 +23,11 @@ def find_greater_pair(src)
     row = 0 
   greater_nums = []
   while row > src.length do 
-    if (src[row][0] > src[row][1])
+    if src[row][0] > src[row][1]
       greater_nums.push(src[row][0])
-    else greater_nums.push(src[row][1])
-    row =+ 1 
+    else greater_nums.push(src[row][1]
     end
+  row =+ 1 
   end
   greater_nums 
 end
