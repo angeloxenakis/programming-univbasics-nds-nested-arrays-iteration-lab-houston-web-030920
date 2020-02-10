@@ -10,13 +10,11 @@ def join_ingredients(src)
   row = 0 
   pizza_strings = []
   while row < src.length do
-    pizza_strings.push("I love #{src[row][0]} and #{src[row][0] + 1} on my pizza")
+    pizza_strings.push("I love #{src[row][0]} and #{src[row][2]} on my pizza")
     row +=1
   end
   pizza_strings
 end
-
-
 
 def find_greater_pair(src)
   # src will be an array of [ [number1, number2], ... [numberN, numberM] ]
